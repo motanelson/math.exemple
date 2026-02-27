@@ -1,21 +1,9 @@
-import numpy
 import matplotlib.pyplot as plt
-def num(n):
-    nn=[]
-    for n1 in range(n):
-        nn=nn+[n1]
-    return nn
-def muls(m,j):
-    nn=[]
-    for n in m:
-        mm=n*j
-        nn=nn+[mm]
-    return nn 
-print("\x1bc\x1b[40;37m\n")
-n=num(10)
-print (n)
-m=muls(n,2)
-print(m)
+
+plt.style.use('dark_background')
+
+n = list(range(10))
+m = [x * 2 for x in n]
+
 plt.scatter(n, m)
 plt.show()
-
