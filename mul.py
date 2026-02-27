@@ -1,3 +1,5 @@
+import numpy
+import matplotlib.pyplot as plt
 def num(n):
     nn=[]
     for n1 in range(n):
@@ -9,9 +11,11 @@ def muls(m,j):
         mm=n*j
         nn=nn+[mm]
     return nn 
-print("\x1bc\x1b[40;37m\nhello world...")
+print("\x1bc\x1b[40;37m\n")
 n=num(10)
 print (n)
 m=muls(n,2)
 print(m)
+plt.scatter(n, m)
+plt.show()
 
